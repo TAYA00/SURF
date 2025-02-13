@@ -1,0 +1,200 @@
+html{
+    box-sizing: border-box;  /*для того щоб правильно розраховувати padding, margin*/
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+a{
+    color: inherit; /*Щоб колір наслідувався у батьків*/
+    text-decoration: none; 
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+h1,h2,h3,p{
+    margin: 0;
+}
+
+.visually-hidden{
+    position: absolute; /* щоб заховати текст */
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+}
+
+body{
+    font-family: "Rethink Sans", serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #2B2A29;
+}
+
+.header{
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-width: 100vh;
+    padding-bottom: 80px;
+    background-size: cover;
+}
+
+.container{ /* */
+    max-width: 1740px; /*ширина контенту, враховуючи падінги*/
+    padding: 0 10px; /*внут відступ, щою контент не прилипва до країв екрану*/
+    margin: 0 auto; /*зовніщній відступ*/
+}
+
+.header__top{
+    padding: 50px 0 90px;
+    display: flex;
+    justify-content: space-between; /* розштовхує внутрішні елементи,розидує по бокам */
+    align-items: center;
+    font-size: 20px; /*задаєм ці властивості в цілий контейнер,бо властивості у елементів однакові*/
+    font-weight: 700;
+}
+
+.menu__list{
+    display: flex;
+    color: #0A507A;
+    gap: 40px; /*відстань між ними*/
+}
+
+.header__phone{
+    display: flex; /*Щоб вирівняти іконку та номер телефону*/
+    align-items: center;
+    gap: 10px;
+    background-color: #0A507A;
+    padding: 10px 20px; /*внутрішні відступи хверху та по бокам контенту від контейнеру кнопки*/
+    border-radius: 30px;
+    color: #fff;
+}
+
+.title__text{
+    color: #fff;
+    padding: 10px 20px; /*внутрішні відступи хверху та по бокам контенту від контейнеру кнопки*/
+    border-radius: 30px;
+    background-color: #2B2A29;
+    display: inline-block;
+}
+
+.title-img{
+    margin-bottom: 12px;
+    width: 100%;  /* щоб картинка не ужималась при зміні дисплею*/
+    position: relative;  /* щоб заховати під фон */
+    z-index: -1;
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__info{
+    display: flex;
+    flex-direction: column;
+    gap: 118px;
+    margin-top: auto;
+}
+
+.header-info__list{
+    display: flex;
+    gap: 18px 10px;  /* спочатку те що верх та низ,потім те що зліва та справа */
+    flex-wrap: wrap; /* щоб переносились на нову строчку */
+    max-width: 485px; /* беремо розмір групи цих ел на дизайні */
+}
+
+.header-info__item{
+    padding: 10px 20px; /*внутрішні відступи хверху та по бокам контенту від контейнеру кнопки*/
+    border-radius: 30px;
+    color: #0A507A;
+    border: 1px solid #0A507A;
+    font-size: 26px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.header__social{
+    margin-top: auto;
+}
+
+.header__social-list{
+    display: flex;
+    gap: 20px;  
+}
+
+.header__news{
+    margin-top: -50px;
+}
+
+.header__news-box{
+    display: flex; /* щоб вони всі стали один за одним задаємо еонтейнеру flex */
+    flex-direction: column; /* щоб вони один під одного пішли */
+    padding: 50px 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .8); /* Якщо нам треба задати фон із прозорістю */
+    margin-bottom: 100px;
+}
+
+.header__news-title,  /* блочний елемент,який займає всю ширину */
+.header__news-time{ 
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.header__news-time{ /* строчний елемент  */
+    margin-bottom: 10px;
+}
+
+.header__news-link{  /* строчний елемент */
+    text-decoration: underline;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    align-self: flex-start; /* щоб не вся область лінку була клікабельна */
+}
+
+.header__buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.header__buttons a{
+    font-size: 32px;
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.header__buttons-book{
+    color: #fff;
+    background-color: #2B2A29
+}
+
+.header__buttons-activities{
+    color: #2B2A29;
+    background-color: rgba(255, 255, 255, .3);
+    border: 1px solid #2B2A29;
+}
+
+@media(max-width:1920px){
+
+}
+
+/* 1.42.02 */

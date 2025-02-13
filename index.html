@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+   <header class="header">
+    <div class="container">
+        <div class="header__top">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">home</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">activities</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">pricing plan</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">contact us</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">blog</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">about us</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+351912568342" class="header__phone">
+                <img src="images/si_phone-line.svg" alt="">+351912568342
+            </a>
+        </div>
+        
+        <img class="title-img" src="images/title.png" alt="">
+        <h1 class="title visually-hidden">Surfing school</h1> <!--має зосттись для гугла,щою можна було знайти серфінг школу-->
+        <p class="title__text">Vilamoura. Portugal</p>
+
+        <div class="header__content">
+            <div class="header__info">
+                <ul class="header-info__list">
+                    <li class="header-info__item">Privat lessons</li>
+                    <li class="header-info__item">Group lessons</li>
+                    <li class="header-info__item">Surf&sup rentals</li>
+                    <li class="header-info__item">Stand up puddle</li>
+                    <li class="header-info__item">Surf trips</li>
+                </ul>
+                <div class="header__social">
+                    <ul class="header__social-list">
+                        <li class="header__social-item"><a href="#" class="header__link"><img src="images/Facebook.svg" alt=""></a></li>
+                        <li class="header__social-item"><a href="#" class="header__link"><img src="images/Instagram.svg" alt=""></a></li>
+                        <li class="header__social-item"><a href="#" class="header__link"><img src="images/Youtube.svg" alt=""></a></li>
+                        <li class="header__social-item"><a href="#" class="header__link"><img src="images/WhatsApp.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__news">
+                <div class="header__news-box">
+                    <h3 class="header__news-title">NAZARE. BIG WAVE TRIP</h3>
+                    <time datetime="" class="header__news-time" datatime="2025-02-10">10.02.2025</time>
+                    <a href="#" class="header__news-link">more info</a>
+                    <img  class="header__news-img" src="images/news.jpg" alt="">
+                </div>
+                <div class="header__buttons">
+                    <a href="#" class="header__buttons-book">book now</a>
+                    <a href="#" class="header__buttons-activities">activities</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </header>
+
+   <script src="js/main.js"></script>
 </body>
 </html>
