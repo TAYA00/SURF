@@ -22,7 +22,7 @@ li{
     list-style: none;
 }
 
-h1,h2,h3,p{
+h1,h2,h3,h4,p{
     margin: 0;
 }
 
@@ -210,4 +210,74 @@ body{
     
 }
 
+.text {
+    max-width: 1075px;
+    font-size: 64px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 150px 0;
+}
+.about {
+    margin-bottom: 150px;
+}
+.container {
+}
+.about__inner {
+    display: flex;
+    justify-content: space-between;  /* щою розприділились */
+}
+.about__content {
+    max-width: 560px; /* щоб контент не вилазив за края */
+    display: flex;
+    flex-direction: column;
+}
+.about__subtitle {
+    margin-bottom: 20px;
+    font-style: 20px;
+    font-weight: 700;
+}
+.about__title {
+    font-style: 64px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+.about__list {
+    display: flex;
+    flex-wrap: wrap;  /* щою переносились коли не хвата місця */
+    gap: 10px;
+    margin-bottom: 20px;
 
+}
+.about__item {
+    padding: 10px 20px; /*внутрішні відступи хверху та по бокам контенту від контейнеру кнопки*/
+    border-radius: 30px;
+    color: #0A507A;
+    border: 1px solid #0A507A;
+    font-size: 26px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.about__text {
+    display: flex;
+    margin-top: auto;
+    gap: 20px;
+    flex-direction: column;
+}
+.about__img {
+    position: relative;
+}
+.about__link {
+    position:absolute;
+    right: 68px;
+    bottom: 46px;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .3);
+    border: 1px solid #fff;
+}
