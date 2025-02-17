@@ -41,6 +41,7 @@ body{
     line-height: 1.3;
     font-weight: 600;
     color: #2B2A29;
+    margin: 0;
 }
 
 .header{
@@ -194,7 +195,19 @@ body{
 }
 
 @media(max-width:1920px){
+    .header{
+        padding-bottom: 80px;
+    }
 
+    /*щоб на великих моніках було норм*/
+    .header__top{
+        padding-top: 30px;
+    }
+
+    /* .header__news-box{
+        margin-bottom: 20px;
+    } */
+    
 }
 
-/* 1.42.02 */
+
